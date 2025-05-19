@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* uigradients.com */
+    background: #FFAFBD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    font-family: Oxygen, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#title {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    margin-top: 3em;
+    font-size: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: darkred;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: Oxygen, sans-serif;
+}
+
+button:hover, button:focus {
+    background-color: #de0826;
+    text-shadow: 0 0 5px darkred;
+    box-shadow: 0 0 20px darkred;
+    font-weight: 800;
+}
+
+.activity {
+    background: darkred;  
+    box-sizing: border-box;
+    color: white;
+    height: 20vh;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid white;
+    padding: 0 1em;
+}
+
+@media (min-width: 760px) {
+    .activity {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 250px) {
+    #title {
+        font-size: 1.75rem;
+    }
+    
+    #bb-icon {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 2px;
+    }
+}
+
+.fun {
+    background: #ee0979;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 0 10px darkred;
+    font-weight: bolder;
+}
+
+#bb-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
